@@ -19,7 +19,7 @@ type question1 struct {
 	ans1
 }
 
-func Test_twoSum(t *testing.T) {
+func Test_Problem1(t *testing.T) {
 	qs := []question1{
 		{
 			para1{nums: []int{2, 7, 11, 15}, target: 9},
@@ -35,6 +35,7 @@ func Test_twoSum(t *testing.T) {
 		},
 	}
 
+	fmt.Printf("------------------------Leetcode Problem 1------------------------\n")
 	for _, q := range qs {
 		_, p := q.ans1, q.para1
 		fmt.Printf("【input】:%v       【output】:%v\n", p, twoSum(p.nums, p.target))

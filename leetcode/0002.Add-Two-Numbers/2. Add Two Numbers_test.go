@@ -32,6 +32,14 @@ func Test_Problem2(t *testing.T) {
 			ans2{[]int{7, 0, 8}},
 		},
 		{
+			para2{[]int{0}, []int{0}},
+			ans2{[]int{0}},
+		},
+		{
+			para2{[]int{9,9,9,9,9,9,9}, []int{9,9,9,9}},
+			ans2{[]int{8,9,9,9,0,0,0,1}},
+		},
+		{
 			para2{[]int{1}, []int{9, 9, 9, 9, 9}},
 			ans2{[]int{0, 0, 0, 0, 0, 1}},
 		},
